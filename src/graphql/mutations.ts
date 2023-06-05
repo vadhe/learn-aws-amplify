@@ -1,3 +1,4 @@
+/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -40,6 +41,33 @@ export const deleteTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
+    }
+  }
+`;
+export const createLists = /* GraphQL */ `
+  mutation CreateLists($input: CreateListsInput!) {
+    createLists(input: $input) {
+      id
+      title
+      content
+    }
+  }
+`;
+export const updateLists = /* GraphQL */ `
+  mutation UpdateLists($input: UpdateListsInput!) {
+    updateLists(input: $input) {
+      id
+      title
+      content
+    }
+  }
+`;
+export const deleteLists = /* GraphQL */ `
+  mutation DeleteLists($input: DeleteListsInput!) {
+    deleteLists(input: $input) {
+      id
+      title
+      content
     }
   }
 `;

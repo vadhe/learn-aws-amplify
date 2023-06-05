@@ -1,3 +1,4 @@
+/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -31,6 +32,33 @@ export const onDeleteTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
+    }
+  }
+`;
+export const onCreateLists = /* GraphQL */ `
+  subscription OnCreateLists($id: ID, $title: String, $content: String) {
+    onCreateLists(id: $id, title: $title, content: $content) {
+      id
+      title
+      content
+    }
+  }
+`;
+export const onUpdateLists = /* GraphQL */ `
+  subscription OnUpdateLists($id: ID, $title: String, $content: String) {
+    onUpdateLists(id: $id, title: $title, content: $content) {
+      id
+      title
+      content
+    }
+  }
+`;
+export const onDeleteLists = /* GraphQL */ `
+  subscription OnDeleteLists($id: ID, $title: String, $content: String) {
+    onDeleteLists(id: $id, title: $title, content: $content) {
+      id
+      title
+      content
     }
   }
 `;
